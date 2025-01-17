@@ -3,13 +3,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Usestateobject from './components/usestates/Usestateobject'
+import UsestateArray from './components/usestates/UsestateArray'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-     <Usestateobject/>
+    <UsestateArray/>
+     {/* <Usestateobject/> */}
     </>
   )
 }

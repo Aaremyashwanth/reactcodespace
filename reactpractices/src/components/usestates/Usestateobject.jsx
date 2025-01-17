@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 
 const Usestateobject = () => {
     
-    
+    //if u need to write in function>>write inside return
+    //we can use usestate no.of times
     const empolye={
         name:"yashwanth",
         city:"hydrabad",
