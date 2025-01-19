@@ -3,13 +3,13 @@ import React, { useState } from 'react'
 const UsestateArray = () => {
     const employ=[
         {
-            id:1,
+            id:"1abbc",
             name:"tufgaming",
             company:"asus",
             operating:"windows"
         },
         {
-            id:2,
+            id:"2accv",
             name:"vivobook",
             company:"HP",
             operating:"windows"
@@ -17,11 +17,13 @@ const UsestateArray = () => {
     ]
     const [laptop,setlaptop]=useState(employ)
     const deletehandle=(comingid)=>{
-        const filterdata=laptop.filter((emp)=>{
-            return emp.id !== comingid;
-        });
+        console.log(comingid);
+        const de=laptop.filter((e)=>e.id!==comingid)
+        // const filterdata=laptop.filter((emp)=>{
+        //     return emp.id !== comingid;
+        // });
       
-       setlaptop(filterdata);
+       setlaptop(de);
     }
   return (
     <div>UsestateArray
@@ -32,7 +34,7 @@ const UsestateArray = () => {
                 <div>{name}</div>
                 <div>{company}</div>
                 <div>{operating}</div>
-                <button onClick={deletehandle(id)}>Delete</button>
+                <button onClick={()=>deletehandle(id)}>Delete</button>
                 </li>
         })}
 
